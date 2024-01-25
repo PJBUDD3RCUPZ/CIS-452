@@ -12,5 +12,5 @@ arr2 = arr1.view()
 
 arr2[0,0] = 0 
 
-print("arr12: ", arr1)
-print("arr13: ", arr2)
+print("arr12: \n", arr1)
+print("arr13: \n", arr2)
