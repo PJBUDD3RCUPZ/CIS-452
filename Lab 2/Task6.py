@@ -6,12 +6,16 @@ import pandas as pd
 
 
 #Task 6
-arr7 = np.array([[1, 2], [3, 4]])
-arr8 = np.array([[5, 6 ], [7, 8 ]])
+arr1 = np.array([[1, 2], 
+                 [3, 4]])
+arr2 = np.array([[5, 6 ], 
+                 [7, 8 ]])
 
 
-Axis0Arr = np.concatenate((arr7, arr8), axis = 0)
-Axis1Arr = np.concatenate((arr7, arr8), axis = 1)
+Axis0Arr = np.concatenate((arr1, arr2), axis = 0)
+Axis1Arr = np.concatenate((arr1, arr2), axis = 1)
 
-print("Concatenate along axis=0:", Axis0Arr)
-print("Concatenate along axis=1:", Axis1Arr)
+print("\nAxis 0 has shape of: ", Axis0Arr.shape)
+print("\nConcatenate along axis=0::\n", Axis0Arr)
+print("\nAxis 1 has shape of: ", Axis1Arr.shape)
+print("Concatenate along axis=1:\n", Axis1Arr)

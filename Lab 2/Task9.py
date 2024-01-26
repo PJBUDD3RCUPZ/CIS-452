@@ -6,11 +6,12 @@ import numpy as np
 
 
 #Task 9 
-arr1 = np.array([[1,2], [3,4]])
+arr1 = np.array([[1,2], 
+                 [3,4]])
 
 arr2 = arr1.view() 
 
 arr2[0,0] = 0 
 
-print("arr12: \n", arr1)
-print("arr13: \n", arr2)
+print("\narr1: \n", arr1)
+print("\narr2: \n", arr2,"\n")

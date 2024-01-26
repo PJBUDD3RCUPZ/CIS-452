@@ -6,8 +6,9 @@
 import numpy as np 
 import pandas as pd
 
-data = ['a', 'b', 'c', 'd'];
+data = ['a', 'b', 'c', 'd']
 
-output = pd.Series(data);
-
-print(output);
+output = pd.Series(data)
+print("\n")
+print(output)
+print("\n")

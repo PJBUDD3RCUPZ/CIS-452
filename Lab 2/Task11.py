@@ -6,8 +6,9 @@
 import numpy as np
 
 
-arr3 = np.array([[1,2,3], [4,5,6]])
+arr3 = np.array([[1,2,3], 
+                 [4,5,6]])
 
 arr3 = arr3.transpose()
 
-print("arr3: ", arr3)
+print("\narr3: \n", arr3,"\n")

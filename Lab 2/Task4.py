@@ -5,10 +5,12 @@ import numpy as np
 import pandas as pd
 
 #Task 4
-arr1 = np.array([[1, 2], [3, 4]])
-arr2 = np.array([[5, 6 ], [7, 8 ]])
+arr1 = np.array([[1, 2],
+                 [3, 4]])
+arr2 = np.array([[5, 6 ],
+                 [7, 8 ]])
 
 
-arr3 = np.dot(arr1, arr2)
+newArr = np.dot(arr1, arr2)
 
-print("\nArr3:", arr3)
+print("\nnewArr:\n", newArr,"\n")

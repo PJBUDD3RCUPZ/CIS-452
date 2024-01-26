@@ -9,8 +9,13 @@ import pandas as pd
 data1 = [2, 4, 6, 8, 10, 12, 14, 16, 18]
 
 output = pd.Series(data1)
+    
 
-print(output)
+print("Orginal All Sereies Data:\n")
+print(output,"\n")
 
-output2 = output[output > 7]
-print(output2)
+booleanizedSeries = output >= 7
+print("Booleanized Series Data\n")
+print (booleanizedSeries,"\n")
+
+

@@ -5,7 +5,8 @@
 #Task 10
 import numpy as np
 
-arr1 = np.array([[1, 2], [3, 4]])
+arr1 = np.array([[1, 2],
+                 [3, 4]])
 
 np.save('test.npy', arr1)
 
@@ -13,5 +14,5 @@ np.save('test.npy', arr1)
 arr2 = np.load('test.npy')
 
 
-print("Arr1", arr1)
-print("Arr2", arr2)
+print("\narr1\n", arr1)
+print("\narr2\n", arr2,"\n")

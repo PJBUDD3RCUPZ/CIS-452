@@ -8,9 +8,9 @@ import pandas as pd
 #Task 1
 A = np.array([[1,2,3],[4,5,6]])
 
-print("Shape of A", A.shape)
+#print("Shape of A", A.shape)
 
 #Task 2
 B = A.reshape(3,2)
 
-print("Shape of B", B.shape)
+print("\nShape of B is", B.shape,"\n")

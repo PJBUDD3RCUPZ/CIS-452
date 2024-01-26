@@ -6,13 +6,14 @@ import pandas as pd
 
 
 #Task 8
-arr10 = np.array([[1, 2], [3, 4]])
+arr1 = np.array([[1, 2],
+                 [3, 4]])
 
-arr11 = np.copy(arr10)
+arr2 = np.copy(arr1)
 
-print("arr11:", arr11)
+#print("arr2:\n", arr2)
 
-arr11[0,0] = 0 
+arr2[0,0] = 0 
 
-print("arr10:", arr10)
-print("arr11:", arr11)
+print("arr1:\n", arr1)
+print("arr2:\n", arr2)

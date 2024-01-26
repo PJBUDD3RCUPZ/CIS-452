@@ -5,8 +5,9 @@ import numpy as np
 import pandas as pd
 
 #Task 7 
-arr9 = np.array([[1, 2], [3, 4]])
+arr1 = np.array([[1, 2], 
+                 [3, 4]])
 
-multplyArray = arr9 * 3 
+multplyArray = arr1 * 3 
 
-print("Element-Wise Multiplication:", multplyArray)
+print("Element-Wise Multiplication:\n", multplyArray)

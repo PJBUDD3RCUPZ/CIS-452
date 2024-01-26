@@ -6,11 +6,9 @@
 import numpy as np 
 import pandas as pd
 
-data1 = [2, 4, 6, 8, np.nan]
+data1 = {'state': ['FL', 'FL', 'GA', 'GA', 'GA'],
+        'year': [2010, 2011, 2008, 2010, 2011],
+        'pop':[18.8, 19.1, 9.7, 9.7, 9.8]}
+output = pd.DataFrame(data1)
 
-output = pd.Series(data1)
-
-print(output)
-
-output2 = output * 5
-print(output2)
+print("\n",output.describe())

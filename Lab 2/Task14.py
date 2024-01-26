@@ -6,10 +6,12 @@
 import numpy as np 
 import pandas as pd
 
-data1 = ['a', 'b', 'c', 'd'];
-data2 = [2, 4, 6, 8];
+data1 = ['a', 'b', 'c', 'd']
+data2 = [2, 4, 6, 8]
 
 
-output = pd.Series(data = data2, index = data1);
+output = pd.Series(data = data2, index = data1)
 
-print(output);
+print("\n")
+print(output)
+print("\n")
