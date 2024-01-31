@@ -1,3 +1,6 @@
+#Created By: Kirk Caponpon, Gabe Gonzales, and Benjamin Richards
+#Lab 3
+#02/04/2024
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np 
@@ -19,6 +22,5 @@ plt.ylabel('Frequency')
 plt.title('Task 4')
 
 plt.legend()
-
 
 plt.show()
