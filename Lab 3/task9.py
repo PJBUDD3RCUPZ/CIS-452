@@ -16,8 +16,8 @@ frequency1 = 432
 frequency2 = 4000
 
 #set signals
-signal1 = 0.5 * np.sin(2 * np.pi * frequency1 * DURATION)
-signal2 = 0.5 * np.sin(2 * np.pi * frequency2 * DURATION)
+signal1 = 0.5 * np.sin(2 * np.pi * frequency1 * time)
+signal2 = 0.5 * np.sin(2 * np.pi * frequency2 * time)
 
 # scale down signal2
 downSignal2 = signal2 * 0.3
@@ -28,15 +28,16 @@ mixed_signal = signal1 + downSignal2
 #scale up mixed signal by 400
 upMixed_signal = mixed_signal * 400
 
-# Plot the first 1000 data points of mixed_signal
-plt.plot(time[:1000],np.arange(1000), label='Mixed Signal')
+#plot the first 1000 data points of mixed_signal
+#          x                  y                     data                        label
+plt.plot(time[:1000],upMixed_signal[:1000] ,label='Mixed Signal')
 
-# Show the plot
+
+#show the plot
 plt.title('First 1000 Data Points of Mixed Signal')
 plt.xlabel('Time (s)')
 plt.ylabel('Amplitude')
-plt.legend()
 plt.show()
 
-# Save mixed_signal as a WAV file
+#save mixed_signal as a WAV file
 #write('output.wav', SAMPLE_RATE, mixed_signal)
