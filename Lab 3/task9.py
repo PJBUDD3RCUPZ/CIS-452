@@ -40,4 +40,4 @@ plt.ylabel('Amplitude')
 plt.show()
 
 #save mixed_signal as a WAV file
-#write('output.wav', SAMPLE_RATE, mixed_signal)
+write('output.wav', SAMPLE_RATE, mixed_signal)

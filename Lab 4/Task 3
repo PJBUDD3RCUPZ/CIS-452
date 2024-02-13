@@ -1,0 +1,32 @@
+# Created By: Kirk Caponpon, Gabe Gonzales, and Benjamin Richards
+# Lab 3
+# 02/13/2024
+
+from gtts import gTTS
+
+# Text to be converted to speech
+mytext = """This course introduces basic techniques for visualization, quantitative analysis,
+intelligent visual
+understanding, virtualization, digital animation, computer and video games,
+and web multimedia. Topics include data visualization, computer vision, visual analysis,
+the process of creating animated video clips from start to finish (including story
+creation, storyboarding, modeling, animation, and post-production), and computer virtualization;
+several key techniques include graphic design, video editing, motion generation, motion capture,
+multimedia, real-time rendering, visualization tools, and virtual machines.
+"""
+
+# Convert text to speech in English and save to file
+tts_en = gTTS(text=mytext, lang='en')
+tts_en.save("output_en.mp3")
+
+# Convert text to speech in Spanish (es) and save to file
+tts_es = gTTS(text=mytext, lang='es')
+tts_es.save("output_es.mp3")
+
+# Convert text to speech in Arabic (ar) and save to file
+tts_ar = gTTS(text=mytext, lang='ar')
+tts_ar.save("output_ar.mp3")
+
+# Convert text to speech in French (fr) and save to file
+tts_fr = gTTS(text=mytext, lang='fr')
+tts_fr.save("output_fr.mp3")
