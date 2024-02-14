@@ -24,3 +24,5 @@ plt.title('Task 4')
 plt.legend()
 
 plt.show()
+
+
