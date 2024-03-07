@@ -1,0 +1,32 @@
+#Created By: Kirk Caponpon, Gabe Gonzales, and Benjamin Richards
+#Lab 3
+#03/07/2024
+
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn import svm
+
+
+irisDataset = load_iris()
+X = irisDataset.data
+y = irisDataset.target
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=42)
+
+
+
+svm_model = svm.SVC()
+
+#train the model
+svm_model.fit(X_train, y_train)
+
+#evaluation using score() of the svm over the test data
+accuracy = svm_model.score(X_test, y_test)
+print("Accuracy:", accuracy)
+
+
+predictions = svm_model.predict(X_test[:2])
+
+# Compare predictions and ground truths
+print("Predictions:", predictions)
+print("Ground Truths:", y_test[:2])
